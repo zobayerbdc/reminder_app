@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    <color name="cFFFFF">#FFFFFFFF</color>
+    <color name="allPrimaryColor">#503559</color>
+    <color name="deepBlack">#6600000B</color>
+    <color name="c4D4D4D">#4D4D4D</color>
+    <color name="c503559">#503559</color>
+    <color name="cFF503559">#FF503559</color>
+    <color name="cFFF2C2">#FFF2C2</color>
+    <color name="cFFF7F7F7">#FFF7F7F7</color>
+    <color name="cFF6E5782">#FF6E5782</color>
+    <color name="cFF9E9E9E">#FF9E9E9E</color>
+
+    <!--home screen color-->
+    <color name="cFFF2C2">#FFF2C2</color>
+
+    <!--bottom sheets unselected color-->
+    <color name="cA798A8">#A798A8</color>
+    <color name="cFF2D2D">#FF2D2D</color>
+
+</colors>
