@@ -18,4 +18,19 @@
     <color name="cA798A8">#A798A8</color>
     <color name="cFF2D2D">#FF2D2D</color>
 
+    <!--welcome text color-->
+    <color name="c041C43">#041C43</color>
+
+    <!--gradient button color-->
+    <color name="cE90909">#E90909</color>
+    <color name="cFF7700">#FF7700</color>
+    <color name="cFFFFFF">#FFFFFF</color>
+
+    <!--reminder screen button-->
+    <color name="cAB1BE2">#AB1BE2</color>
+    <color name="c7D319A">#7D319A</color>
+    <color name="cEA0C09">#EA0C09</color>
+
+
+
 </colors>

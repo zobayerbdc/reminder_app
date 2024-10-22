@@ -38,6 +38,16 @@ class TextFontStyle {
       fontWeight: FontWeight.w600
   );
 
+  static final text13poppinscFF6E5782w600 = GoogleFonts.poppins(
+      color: AppColors.cFF6E5782,
+      fontSize: 13.sp,
+  );
+
+  static final text10poppinscFF6E5782w600 = GoogleFonts.poppins(
+    color: AppColors.cFF6E5782,
+    fontSize: 10.sp,
+  );
+
   static final text16cFF6E5782w600 = GoogleFonts.urbanist(
       color: AppColors.cFF6E5782,
       fontSize: 16.sp,
@@ -47,6 +57,7 @@ class TextFontStyle {
   static final text16cFF2D2Dw600 = GoogleFonts.urbanist(
     color: AppColors.cFF2D2D,
     fontSize: 16.sp,
+    fontWeight: FontWeight.bold
   );
 
   static final headline11cFF6E5782w600 = GoogleFonts.urbanist(
@@ -54,9 +65,5 @@ class TextFontStyle {
       fontSize: 24.sp,
       fontWeight: FontWeight.w700
   );
-
-
-
-
 
 }

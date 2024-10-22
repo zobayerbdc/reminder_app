@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:reminder_apps/common_widgets/custom_button.dart';
+import 'package:reminder_apps/common_widgets/customs_button.dart';
 import 'package:reminder_apps/constant/text_font_style.dart';
 import 'package:reminder_apps/gen/assets.gen.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
@@ -36,7 +37,7 @@ class OnboardScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Image.asset(
-                      Assets.images.onboard.path,
+                      Assets.images.logo.path,
                       width: 70.w,
                     ),
                     Text(
@@ -60,11 +61,14 @@ class OnboardScreen extends StatelessWidget {
                   textAlign: TextAlign.start,
                 ),
                 UIHelper.verticalSpace(35.h),
-                Center(child: Image.asset(Assets.images.onboardImage.path)),
+                Center(child: Image.asset(Assets.images.logo.path)),
                 UIHelper.verticalSpace(35.h),
-                CustomButton(onTap: () {
+                CustomsButton(onTap: () {
                   NavigationService.navigateTo(Routes.splashscreen);
-                }, text: 'Continue',)
+                }, text: 'Continue', gradientColors: const [
+                  AppColors.cE90909,
+                  AppColors.cFF7700
+                ], borderRadius: 15.sp,)
               ],
             ),
           ),

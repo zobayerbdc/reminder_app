@@ -58,6 +58,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow-right.svg
   String get arrowRight => 'assets/icons/arrow-right.svg';
 
+  /// File path: assets/icons/back_button.svg
+  String get backButton => 'assets/icons/back_button.svg';
+
   /// File path: assets/icons/book-saved.svg
   String get bookSaved => 'assets/icons/book-saved.svg';
 
@@ -69,6 +72,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/editSquareFill.svg
   String get editSquareFill => 'assets/icons/editSquareFill.svg';
+
+  /// File path: assets/icons/gallery.svg
+  String get gallery => 'assets/icons/gallery.svg';
 
   /// File path: assets/icons/google.svg
   String get google => 'assets/icons/google.svg';
@@ -85,11 +91,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/more-square.svg
   String get moreSquare => 'assets/icons/more-square.svg';
 
+  /// File path: assets/icons/noun-setting.svg
+  String get nounSetting => 'assets/icons/noun-setting.svg';
+
   /// File path: assets/icons/profileFill.svg
   String get profileFill => 'assets/icons/profileFill.svg';
 
   /// File path: assets/icons/shield-tick.svg
   String get shieldTick => 'assets/icons/shield-tick.svg';
+
+  /// File path: assets/icons/telegram_send.svg
+  String get telegramSend => 'assets/icons/telegram_send.svg';
 
   /// File path: assets/icons/wallet-3.svg
   String get wallet3 => 'assets/icons/wallet-3.svg';
@@ -108,17 +120,21 @@ class $AssetsIconsGen {
         search,
         apple,
         arrowRight,
+        backButton,
         bookSaved,
         bookSavedFill,
         bookSquareFill,
         editSquareFill,
+        gallery,
         google,
         homeFillIcon,
         infoCircle,
         logout,
         moreSquare,
+        nounSetting,
         profileFill,
         shieldTick,
+        telegramSend,
         wallet3
       ];
 }
@@ -126,51 +142,25 @@ class $AssetsIconsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Graphic.png
+  AssetGenImage get graphic => const AssetGenImage('assets/images/Graphic.png');
+
   /// File path: assets/images/bg.png
   AssetGenImage get bg => const AssetGenImage('assets/images/bg.png');
 
-  /// File path: assets/images/card_bg_image.jpg
-  AssetGenImage get cardBgImage =>
-      const AssetGenImage('assets/images/card_bg_image.jpg');
-
-  /// File path: assets/images/forget_image.png
-  AssetGenImage get forgetImage =>
-      const AssetGenImage('assets/images/forget_image.png');
-
-  /// File path: assets/images/home_bg_image.png
-  AssetGenImage get homeBgImage =>
-      const AssetGenImage('assets/images/home_bg_image.png');
+  /// File path: assets/images/clock_logo.png
+  AssetGenImage get clockLogo =>
+      const AssetGenImage('assets/images/clock_logo.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
 
-  /// File path: assets/images/onboard.png
-  AssetGenImage get onboard => const AssetGenImage('assets/images/onboard.png');
-
-  /// File path: assets/images/onboard_image.png
-  AssetGenImage get onboardImage =>
-      const AssetGenImage('assets/images/onboard_image.png');
-
-  /// File path: assets/images/person_image.png
-  AssetGenImage get personImage =>
-      const AssetGenImage('assets/images/person_image.png');
-
-  /// File path: assets/images/profileImage.png
-  AssetGenImage get profileImage =>
-      const AssetGenImage('assets/images/profileImage.png');
+  /// File path: assets/images/profile_pic.png
+  AssetGenImage get profilePic =>
+      const AssetGenImage('assets/images/profile_pic.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [
-        bg,
-        cardBgImage,
-        forgetImage,
-        homeBgImage,
-        logo,
-        onboard,
-        onboardImage,
-        personImage,
-        profileImage
-      ];
+  List<AssetGenImage> get values => [graphic, bg, clockLogo, logo, profilePic];
 }
 
 class Assets {

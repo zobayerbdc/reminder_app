@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
-import 'package:reminder_apps/features/splash_screen.dart';
+import 'package:reminder_apps/features/home_screen/home_screen.dart';
+import 'package:reminder_apps/features/splash_screen/splash_screen.dart';
 
 final class Routes {
   static final Routes _routes = Routes._internal();
@@ -8,6 +9,7 @@ final class Routes {
   static Routes get instance => _routes;
 
   static const String splashscreen = '/splashscreen';
+  static const String walkthrowscreen = '/walkthrowscreen';
   static const String homescreen = '/splashscreen';
   static const String loginscreen = '/splashscreen';
 
@@ -28,6 +30,21 @@ final class RouteGenerator {
                 widget: const ScreenTitle(widget: SplashScreen()),
                 settings: settings)
             : CupertinoPageRoute(builder: (context) => const SplashScreen());
+
+      case Routes.splashscreen:
+        return Platform.isAndroid
+            ? _FadedTransitionRoute(
+            widget: const ScreenTitle(widget: SplashScreen()),
+            settings: settings)
+            : CupertinoPageRoute(builder: (context) => const SplashScreen());
+
+      case Routes.homescreen:
+        return Platform.isAndroid
+            ? _FadedTransitionRoute(
+            widget: const ScreenTitle(widget: HomeScreen()),
+            settings: settings)
+            : CupertinoPageRoute(builder: (context) => const HomeScreen());
+
 
       default:
         return null;

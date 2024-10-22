@@ -4,6 +4,7 @@ import 'package:reminder_apps/constant/text_font_style.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
 
 class CustomButton extends StatelessWidget {
+
   final Function()? onTap;
   final String text;
   const CustomButton({super.key, this.onTap, required this.text});
@@ -15,7 +16,7 @@ class CustomButton extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 58,
-        padding:  EdgeInsets.symmetric(horizontal: 110.w, vertical: 10.h),
+        // padding:  EdgeInsets.symmetric(horizontal: 110.w, vertical: 10.h),
         decoration: ShapeDecoration(
           color: AppColors.cFF503559,
           shape: RoundedRectangleBorder(
@@ -31,3 +32,6 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
+
+
+

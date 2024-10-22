@@ -4,8 +4,10 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:reminder_apps/constant/app_constant.dart';
+import 'package:reminder_apps/features/splash_screen/splash_screen.dart';
 import 'package:reminder_apps/helper/di.dart';
 import 'package:reminder_apps/helper/helpers_method.dart';
+import 'package:reminder_apps/onboard_screen.dart';
 import 'package:reminder_apps/welcome_screen.dart';
 
 
@@ -46,10 +48,9 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     if (_isLoading) {
-      return const WelcomScreen();
+      return const SplashScreen(); //splashscreen
     } else {
-      return const WelcomScreen(); //OnboardScreen
-
+      return const SplashScreen(); //OnboardScreen
     }
   }
 }

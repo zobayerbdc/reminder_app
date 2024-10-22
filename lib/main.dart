@@ -5,12 +5,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
-import 'package:reminder_apps/features/splash_screen.dart';
+import 'package:reminder_apps/features/home_screen/home_screen.dart';
+import 'package:reminder_apps/features/splash_screen/splash_screen.dart';
 import 'package:reminder_apps/helper/all_routes.dart';
 import 'package:reminder_apps/helper/di.dart';
 import 'package:reminder_apps/helper/helpers_method.dart';
 import 'package:reminder_apps/helper/navigation_service.dart';
 import 'package:reminder_apps/helper/register_provider.dart';
+import 'package:reminder_apps/loading.dart';
+import 'package:reminder_apps/onboard_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -79,7 +82,7 @@ class UtillScreenMobile extends StatelessWidget {
             },
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
-            home: const SplashScreen(),
+            home: const SplashScreen(), //Loading
           ),
         );
       },
