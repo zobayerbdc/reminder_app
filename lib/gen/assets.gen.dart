@@ -210,15 +210,44 @@ class $AssetsImagesGen {
   AssetGenImage get clockLogo =>
       const AssetGenImage('assets/images/clock_logo.png');
 
+  /// File path: assets/images/cogwheel.png
+  AssetGenImage get cogwheel =>
+      const AssetGenImage('assets/images/cogwheel.png');
+
+  /// File path: assets/images/customer-service.png
+  AssetGenImage get customerService =>
+      const AssetGenImage('assets/images/customer-service.png');
+
+  /// File path: assets/images/image 3.png
+  AssetGenImage get image3 => const AssetGenImage('assets/images/image 3.png');
+
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
+  /// File path: assets/images/mobile.png
+  AssetGenImage get mobile => const AssetGenImage('assets/images/mobile.png');
 
   /// File path: assets/images/profile_pic.png
   AssetGenImage get profilePic =>
       const AssetGenImage('assets/images/profile_pic.png');
 
+  /// File path: assets/images/small_clock.png
+  AssetGenImage get smallClock =>
+      const AssetGenImage('assets/images/small_clock.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [graphic, bg, clockLogo, logo, profilePic];
+  List<AssetGenImage> get values => [
+        graphic,
+        bg,
+        clockLogo,
+        cogwheel,
+        customerService,
+        image3,
+        logo,
+        mobile,
+        profilePic,
+        smallClock
+      ];
 }
 
 class Assets {

@@ -3,9 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:reminder_apps/common_widgets/custom_text_feild.dart';
 import 'package:reminder_apps/common_widgets/customs_button.dart';
-import 'package:reminder_apps/common_widgets/customs_text_feild.dart';
 import 'package:reminder_apps/constant/text_font_style.dart';
-import 'package:reminder_apps/features/home_screen/home_main_screen.dart';
+import 'package:reminder_apps/features/reminder_screen/reminder_with_picture.dart';
 import 'package:reminder_apps/gen/assets.gen.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
 import 'package:reminder_apps/helper/ui_helpers.dart';
@@ -51,7 +50,8 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(10),
+          margin: EdgeInsets.symmetric(horizontal: 15.sp),
+          padding: const EdgeInsets.all(5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             // Align text to the left
@@ -121,7 +121,7 @@ class _HelpSupportScreenState extends State<HelpSupportScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeMainScreen(),
+                        builder: (context) => const ReminderWithPicture(),
                       ),
                     );
                   },

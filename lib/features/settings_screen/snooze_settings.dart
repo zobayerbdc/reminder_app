@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:reminder_apps/constant/text_font_style.dart';
 import 'package:reminder_apps/gen/assets.gen.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
+import 'package:reminder_apps/helper/ui_helpers.dart';
 
 class SnoozeSettings extends StatefulWidget {
   const SnoozeSettings({super.key});
@@ -20,10 +21,22 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(17.0),
+            // Optional padding to align it better
+            child: SvgPicture.asset(
+              Assets.icons.backButton,
+            ),
+          ),
+        ),
         title: Text(
           'Snooze Settings',
           style: TextFontStyle.text16cFF6E5782w600.copyWith(
-            fontSize: 22.sp,
+            fontSize: 20.sp,
             color: AppColors.c000000,
           ),
         ),
@@ -35,11 +48,20 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
             Container(
               height: 60.h,
               width: double.infinity,
-              margin: EdgeInsets.all(10.sp),
-              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(horizontal: 20.sp, vertical: 25.sp),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: AppColors.cFFFFFF,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.deepBlack.withOpacity(0.1),
+                    // Shadow for this container
+                    spreadRadius: 1,
+                    blurRadius: 6,
+                    offset: const Offset(2, 3),
+                  ),
+                ],
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +72,7 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
                         color: AppColors.c000000, fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     child: SvgPicture.asset(
                       Assets.icons.nounEdit,
                       height: 18.h,
@@ -63,11 +85,20 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
             Container(
               height: 60.h,
               width: double.infinity,
-              margin: EdgeInsets.all(10.sp),
-              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(horizontal: 20.sp),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: AppColors.cFFFFFF,
+                boxShadow: [
+                  BoxShadow(
+                    color: AppColors.deepBlack.withOpacity(0.1),
+                    // Shadow for this container
+                    spreadRadius: 1,
+                    blurRadius: 6,
+                    offset: const Offset(2, 3),
+                  ),
+                ],
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -78,7 +109,7 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
                         color: AppColors.c000000, fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     child: SvgPicture.asset(
                       Assets.icons.nounEdit,
                       height: 18.h,
@@ -91,8 +122,8 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
             Container(
               height: 60.h,
               width: double.infinity,
-              margin: EdgeInsets.all(10.sp),
-              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(horizontal: 20.sp, vertical: 30.sp),
+              padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: AppColors.cFFFFFF,
@@ -102,7 +133,7 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
                     // Shadow for this container
                     spreadRadius: 1,
                     blurRadius: 6,
-                    offset: Offset(2, 3),
+                    offset: const Offset(2, 3),
                   ),
                 ],
               ),
@@ -138,24 +169,9 @@ class _SnoozeSettingsState extends State<SnoozeSettings> {
                 ],
               ),
             ),
-            // Slider(
-            //     value: _currentSliderValue,
-            //     max: 360,
-            //     divisions: 360,
-            //     label: _currentSliderValue.round().toString(),
-            //     activeColor: AppColors.cAB1BE2,
-            //     inactiveColor: AppColors.cFFFFFF,
-            //     thumbColor: AppColors.cFFFFFF,
-            //     onChanged: (double value) {
-            //       setState(() {
-            //         _currentSliderValue = value;
-            //       });
-            //     }),
-
-
             SliderTheme(
               data: SliderTheme.of(context).copyWith(
-                valueIndicatorShape: PaddleSliderValueIndicatorShape(), // Custom shape for the label
+                valueIndicatorShape: const PaddleSliderValueIndicatorShape(), // Custom shape for the label
                 valueIndicatorTextStyle: TextStyle(
                   fontSize: 12.sp,  // Customize text size
                   color: AppColors.cFFFFFF,

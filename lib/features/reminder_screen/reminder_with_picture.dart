@@ -47,10 +47,30 @@ class _ReminderWithPictureState extends State<ReminderWithPicture> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add New Reminder'),
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(17.0),
+            // Optional padding to align it better
+            child: SvgPicture.asset(
+              Assets.icons.backButton,
+            ),
+          ),
+        ),
+        title: Text(
+          'Add New Reminder',
+          style: TextFontStyle.text16cFF6E5782w600.copyWith(
+            fontSize: 20.sp,
+            color: AppColors.c000000,
+          ),
+        ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 15.sp),
           padding: const EdgeInsets.all(10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

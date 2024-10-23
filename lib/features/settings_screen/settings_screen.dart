@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:reminder_apps/features/home_screen/home_main_screen.dart';
 import 'package:reminder_apps/features/reminder_screen/reminder_with_picture.dart';
 import 'package:reminder_apps/features/settings_screen/help_support_screen.dart';
 import 'package:reminder_apps/features/settings_screen/snooze_settings.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
-import 'package:reminder_apps/helper/all_routes.dart';
-import 'package:reminder_apps/helper/navigation_service.dart';
 import 'package:reminder_apps/helper/ui_helpers.dart';
 import '../../constant/text_font_style.dart';
 import '../../gen/assets.gen.dart';
@@ -24,10 +21,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(17.0),
+            // Optional padding to align it better
+            child: SvgPicture.asset(
+              Assets.icons.backButton,
+            ),
+          ),
+        ),
         title: Text(
-          'Settings',
+          'Help & Support',
           style: TextFontStyle.text16cFF6E5782w600.copyWith(
-            fontSize: 22.sp,
+            fontSize: 20.sp,
             color: AppColors.c000000,
           ),
         ),
@@ -151,10 +160,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
             /*setting listing*/
             SettingMenuWidget(
-              svg: SvgPicture.asset(
-                Assets.icons.smallClock,
-                height: 30.h,
-              ),
+              svg: Image.asset(Assets.images.smallClock.path, height: 25.h,),
               title: 'Snooze Settings',
               onPress: () {
                 Navigator.push(context,
@@ -162,31 +168,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
               },
             ),
             SettingMenuWidget(
-              svg: SvgPicture.asset(
-                Assets.icons.smallClock,
-                height: 30.h,
-              ),
+              svg: Image.asset(Assets.images.cogwheel.path, height: 25.h,),
               title: 'Personal Settings',
               onPress: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (_) => const HelpSupportScreen()));
+                        builder: (_) => const ReminderWithPicture()));
               },
             ),
             SettingMenuWidget(
-              svg: SvgPicture.asset(
-                Assets.icons.smallClock,
-                height: 30.h,
-              ),
+              svg: Image.asset(Assets.images.mobile.path, height: 25.h,),
               title: 'Tutorial Settings',
               onPress: () {},
             ),
             SettingMenuWidget(
-              svg: SvgPicture.asset(
-                Assets.icons.smallClock,
-                height: 30.h,
-              ),
+              svg: Image.asset(Assets.images.customerService.path, height: 25.h,),
               title: 'Help & Support',
               onPress: () {
                 Navigator.push(
@@ -195,6 +192,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         builder: (_) => const HelpSupportScreen()));
               },
             ),
+
           ],
         ),
       ),
@@ -211,16 +209,16 @@ class SettingMenuWidget extends StatelessWidget {
   });
 
   final String title;
-  final SvgPicture svg;
+  final Image svg;
   final VoidCallback onPress;
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return GestureDetector(
       onTap: onPress,
       child: Container(
         margin: const EdgeInsets.all(10),
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: AppColors.cFFFFFF,
           borderRadius: BorderRadius.circular(10),
