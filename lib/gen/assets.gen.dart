@@ -58,6 +58,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow-right.svg
   String get arrowRight => 'assets/icons/arrow-right.svg';
 
+  /// File path: assets/icons/back-arrow.svg
+  String get backArrow => 'assets/icons/back-arrow.svg';
+
   /// File path: assets/icons/back_button.svg
   String get backButton => 'assets/icons/back_button.svg';
 
@@ -69,6 +72,15 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/bookSquareFill.svg
   String get bookSquareFill => 'assets/icons/bookSquareFill.svg';
+
+  /// File path: assets/icons/chevron-down.svg
+  String get chevronDown => 'assets/icons/chevron-down.svg';
+
+  /// File path: assets/icons/cogwheel.svg
+  String get cogwheel => 'assets/icons/cogwheel.svg';
+
+  /// File path: assets/icons/customer-service.svg
+  String get customerService => 'assets/icons/customer-service.svg';
 
   /// File path: assets/icons/editSquareFill.svg
   String get editSquareFill => 'assets/icons/editSquareFill.svg';
@@ -88,8 +100,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/logout.svg
   String get logout => 'assets/icons/logout.svg';
 
+  /// File path: assets/icons/mobile.svg
+  String get mobile => 'assets/icons/mobile.svg';
+
   /// File path: assets/icons/more-square.svg
   String get moreSquare => 'assets/icons/more-square.svg';
+
+  /// File path: assets/icons/noun-reminder.svg
+  String get nounReminder => 'assets/icons/noun-reminder.svg';
 
   /// File path: assets/icons/noun-setting.svg
   String get nounSetting => 'assets/icons/noun-setting.svg';
@@ -99,6 +117,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/shield-tick.svg
   String get shieldTick => 'assets/icons/shield-tick.svg';
+
+  /// File path: assets/icons/small_clock.svg
+  String get smallClock => 'assets/icons/small_clock.svg';
 
   /// File path: assets/icons/telegram_send.svg
   String get telegramSend => 'assets/icons/telegram_send.svg';
@@ -120,20 +141,27 @@ class $AssetsIconsGen {
         search,
         apple,
         arrowRight,
+        backArrow,
         backButton,
         bookSaved,
         bookSavedFill,
         bookSquareFill,
+        chevronDown,
+        cogwheel,
+        customerService,
         editSquareFill,
         gallery,
         google,
         homeFillIcon,
         infoCircle,
         logout,
+        mobile,
         moreSquare,
+        nounReminder,
         nounSetting,
         profileFill,
         shieldTick,
+        smallClock,
         telegramSend,
         wallet3
       ];

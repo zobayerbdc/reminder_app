@@ -5,6 +5,7 @@ import 'package:reminder_apps/constant/text_font_style.dart';
 import 'package:reminder_apps/features/home_screen/home_screen.dart';
 import 'package:reminder_apps/features/settings_screen/settings_screen.dart';
 import 'package:reminder_apps/gen/assets.gen.dart';
+import 'package:reminder_apps/gen/colors.gen.dart';
 
 class HomeMainScreen extends StatelessWidget {
   const HomeMainScreen({super.key});
@@ -17,6 +18,7 @@ class HomeMainScreen extends StatelessWidget {
           'Home',
           style: TextFontStyle.text16cFF6E5782w600.copyWith(
             fontSize: 22.sp,
+            color: AppColors.c000000
           ),
         ),
         automaticallyImplyLeading: false,
@@ -35,7 +37,7 @@ class HomeMainScreen extends StatelessWidget {
               },
               child: SvgPicture.asset(
                 Assets.icons.nounSetting,
-                height: 30.h,
+                height: 25.h,
                 width: 15.w,
               ),
             ),
