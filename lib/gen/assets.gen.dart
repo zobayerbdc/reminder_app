@@ -52,6 +52,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/Search.svg
   String get search => 'assets/icons/Search.svg';
 
+  /// File path: assets/icons/active_reminder.png
+  AssetGenImage get activeReminderPng =>
+      const AssetGenImage('assets/icons/active_reminder.png');
+
+  /// File path: assets/icons/active_reminder.svg
+  String get activeReminderSvg => 'assets/icons/active_reminder.svg';
+
   /// File path: assets/icons/apple.svg
   String get apple => 'assets/icons/apple.svg';
 
@@ -79,6 +86,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/cogwheel.svg
   String get cogwheel => 'assets/icons/cogwheel.svg';
 
+  /// File path: assets/icons/cross_icon.png
+  AssetGenImage get crossIcon =>
+      const AssetGenImage('assets/icons/cross_icon.png');
+
+  /// File path: assets/icons/customer-service (1).svg
+  String get customerService1 => 'assets/icons/customer-service (1).svg';
+
   /// File path: assets/icons/customer-service.svg
   String get customerService => 'assets/icons/customer-service.svg';
 
@@ -94,6 +108,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/homeFillIcon.svg
   String get homeFillIcon => 'assets/icons/homeFillIcon.svg';
 
+  /// File path: assets/icons/image 1.svg
+  String get image1 => 'assets/icons/image 1.svg';
+
   /// File path: assets/icons/info-circle.svg
   String get infoCircle => 'assets/icons/info-circle.svg';
 
@@ -105,6 +122,12 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/more-square.svg
   String get moreSquare => 'assets/icons/more-square.svg';
+
+  /// File path: assets/icons/noun-edit.svg
+  String get nounEdit => 'assets/icons/noun-edit.svg';
+
+  /// File path: assets/icons/noun-image-upload.svg
+  String get nounImageUpload => 'assets/icons/noun-image-upload.svg';
 
   /// File path: assets/icons/noun-reminder.svg
   String get nounReminder => 'assets/icons/noun-reminder.svg';
@@ -128,7 +151,7 @@ class $AssetsIconsGen {
   String get wallet3 => 'assets/icons/wallet-3.svg';
 
   /// List of all assets
-  List<String> get values => [
+  List<dynamic> get values => [
         bookmark,
         chat,
         editSquare,
@@ -139,6 +162,8 @@ class $AssetsIconsGen {
         notification,
         profile,
         search,
+        activeReminderPng,
+        activeReminderSvg,
         apple,
         arrowRight,
         backArrow,
@@ -148,15 +173,20 @@ class $AssetsIconsGen {
         bookSquareFill,
         chevronDown,
         cogwheel,
+        crossIcon,
+        customerService1,
         customerService,
         editSquareFill,
         gallery,
         google,
         homeFillIcon,
+        image1,
         infoCircle,
         logout,
         mobile,
         moreSquare,
+        nounEdit,
+        nounImageUpload,
         nounReminder,
         nounSetting,
         profileFill,

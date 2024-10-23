@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:reminder_apps/features/home_screen/home_main_screen.dart';
+import 'package:reminder_apps/features/reminder_screen/reminder_with_picture.dart';
+import 'package:reminder_apps/features/settings_screen/help_support_screen.dart';
+import 'package:reminder_apps/features/settings_screen/snooze_settings.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
+import 'package:reminder_apps/helper/all_routes.dart';
+import 'package:reminder_apps/helper/navigation_service.dart';
 import 'package:reminder_apps/helper/ui_helpers.dart';
 import '../../constant/text_font_style.dart';
 import '../../gen/assets.gen.dart';
@@ -105,7 +110,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     child: Row(
                       children: [
                         SvgPicture.asset(
-                          Assets.icons.nounReminder,
+                          Assets.icons.activeReminderSvg,
                           height: 45.h,
                         ),
                         Column(
@@ -152,7 +157,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               title: 'Snooze Settings',
               onPress: () {
-                Navigator.push(context, MaterialPageRoute(builder: (_)=> const HomeMainScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (_) => const SnoozeSettings()));
               },
             ),
             SettingMenuWidget(
@@ -161,7 +167,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 height: 30.h,
               ),
               title: 'Personal Settings',
-              onPress: () {},
+              onPress: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const HelpSupportScreen()));
+              },
             ),
             SettingMenuWidget(
               svg: SvgPicture.asset(
@@ -177,7 +188,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 height: 30.h,
               ),
               title: 'Help & Support',
-              onPress: () {},
+              onPress: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const HelpSupportScreen()));
+              },
             ),
           ],
         ),

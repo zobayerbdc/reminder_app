@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:reminder_apps/common_widgets/custom_button_widget.dart';
-import 'package:reminder_apps/common_widgets/customs_button.dart';
 import 'package:reminder_apps/constant/text_font_style.dart';
 import 'package:reminder_apps/features/reminder_screen/add_reminder_screen.dart';
 import 'package:reminder_apps/gen/assets.gen.dart';
 import 'package:reminder_apps/gen/colors.gen.dart';
+import 'package:reminder_apps/helper/all_routes.dart';
+import 'package:reminder_apps/helper/navigation_service.dart';
 import 'package:reminder_apps/helper/ui_helpers.dart';
 
 class HomeScreen extends StatelessWidget {

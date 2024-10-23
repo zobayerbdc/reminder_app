@@ -53,6 +53,7 @@ dependencies:
   flutter_otp_text_field: ^1.2.0
   carousel_slider: ^5.0.0
   path_provider: ^2.0.14
+  dotted_border: ^2.1.0
 
 dev_dependencies:
   flutter_test:
