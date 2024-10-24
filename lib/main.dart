@@ -6,6 +6,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:reminder_apps/features/home_screen/home_screen.dart';
+import 'package:reminder_apps/features/home_screen/tabbar_screen.dart';
 import 'package:reminder_apps/features/splash_screen/splash_screen.dart';
 import 'package:reminder_apps/helper/all_routes.dart';
 import 'package:reminder_apps/helper/di.dart';
@@ -82,7 +83,7 @@ class UtillScreenMobile extends StatelessWidget {
             },
             navigatorKey: NavigationService.navigatorKey,
             onGenerateRoute: RouteGenerator.generateRoute,
-            home: const SplashScreen(), //Loading
+            home: const SplashScreen(), //Loading //splashscreen
           ),
         );
       },

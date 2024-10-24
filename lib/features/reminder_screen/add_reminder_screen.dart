@@ -121,8 +121,9 @@ class _AddReminderScreenState extends State<AddReminderScreen> {
                   child: Text(
                     'Clear All',
                     style: TextFontStyle.text13poppinscFF6E5782w600
-                        .copyWith(color: AppColors.cEA0C09),
+                        .copyWith(color: AppColors.cEA0C09, decoration: TextDecoration.underline, height: 0),
                     textAlign: TextAlign.center,
+
                   ),
                 ),
               ),

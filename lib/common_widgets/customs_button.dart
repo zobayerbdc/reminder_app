@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:reminder_apps/constant/text_font_style.dart';
 
 class CustomsButton extends StatelessWidget {
   final Function()? onTap;
@@ -14,7 +15,8 @@ class CustomsButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
+        margin: EdgeInsets.fromLTRB(0, 20, 0, 0),
+        width: 280.w,
         height: 58,
         //padding: EdgeInsets.symmetric(horizontal: 110.h, vertical: 10.w),
         decoration: BoxDecoration(
@@ -35,9 +37,9 @@ class CustomsButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: const TextStyle(
+            style: TextFontStyle.text15poppins000000.copyWith(
               color: Colors.white,
-              fontSize: 18,
+              fontSize: 15,
               fontWeight: FontWeight.bold,
             ),
           ),

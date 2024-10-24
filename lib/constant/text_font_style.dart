@@ -15,7 +15,7 @@ class TextFontStyle {
   static final text1500000B66w600 = GoogleFonts.urbanist(
       color: AppColors.deepBlack,
       fontSize: 15.sp,
-      fontWeight: FontWeight.w600);
+      fontWeight: FontWeight.w700);
 
   static final text14503559w400 = GoogleFonts.urbanist(
       color: AppColors.allPrimaryColor,
@@ -65,5 +65,26 @@ class TextFontStyle {
       fontSize: 24.sp,
       fontWeight: FontWeight.w700
   );
+
+  /*##################*/
+  /*walk throw screen*/
+  static final text13poppinsc000000 = GoogleFonts.poppins(
+    color: AppColors.c000000,
+    fontSize: 13.sp,
+  );
+
+  static final text15figtreec000000 = GoogleFonts.figtree(
+    color: AppColors.c000000,
+    fontSize: 15.sp,
+  );
+
+  static final text15poppins000000 = GoogleFonts.poppins(
+    color: AppColors.cFFFFFF,
+    fontSize: 15.sp,
+  );
+
+  static final customizePoppinsFont = GoogleFonts.poppins(
+  );
+
 
 }

@@ -83,6 +83,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/chevron-down.svg
   String get chevronDown => 'assets/icons/chevron-down.svg';
 
+  /// File path: assets/icons/circle_green_home.svg
+  String get circleGreenHome => 'assets/icons/circle_green_home.svg';
+
   /// File path: assets/icons/cogwheel.svg
   String get cogwheel => 'assets/icons/cogwheel.svg';
 
@@ -172,6 +175,7 @@ class $AssetsIconsGen {
         bookSavedFill,
         bookSquareFill,
         chevronDown,
+        circleGreenHome,
         cogwheel,
         crossIcon,
         customerService1,

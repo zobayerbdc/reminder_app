@@ -36,7 +36,8 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       "You don’t have set any reminder. Create one in a seconds.",
-                      style: TextFontStyle.text13poppinscFF6E5782w600,
+                      style: TextFontStyle.text13poppinscFF6E5782w600.copyWith(fontSize: 15.sp),
+                      textAlign: TextAlign.center,
                     ),
                     UIHelper.verticalSpaceSemiLarge,
                     Image.asset(
